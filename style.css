@@ -1,0 +1,90 @@
+/*  SIMPLE RESET  */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Display the Board - define the buttons */
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: black;
+    justify-content: center;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  #grid button {
+    height: 100px;
+    background-color: white;
+    color: blue;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  #grid button:hover:enabled {
+    background-color: lightgray;
+  }
+
+  /* Header */
+  header h1 {
+    text-align: center;
+  }
+
+  /* Players Section */
+  
+  #players {
+    display: flex;
+    justify-content: center;
+    gap: 275px;
+    margin: 30px;
+  }
+
+  #playerOne, #playerTwo {
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 15px;
+  }
+
+  #playerOne.active, #playerTwo.active {
+    background-color: lightgreen;
+  }
+
+  /* Start Game or Restart Game */
+
+  #startBtn {
+    display: block;
+    margin: 35px auto;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 2.5rem;
+  }
+
+  /* Winner Announcement */
+
+  #gameResult {
+    padding: 30px 30px 0px 30px;
+    text-align: center;
+  }
